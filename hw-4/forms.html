@@ -24,24 +24,62 @@
   <label for="pass2">Confirm Password</label>
   <input type="password" placeholder="confirm password" id="pass2">
   <h2>Radio Buttons</h2>
+  <p>Pick a color...</p>
+  <input type="radio" id="red" name="color">
+  <label for="red">Red</label>
+  <input type="radio" id="orange" name="color">
+  <label for="orange">Orange</label>
+  <input type="radio" id="yellow" name="color">
+  <label for="yellow">Yellow</label>
+  <h2>Checkboxes</h2>
+  <p>What kind of person are you?</p>
+  <input type="checkbox" name="likesdogs" id="likesdogs">
+  <label for="likesdogs">Dogs-lover</label>
+  <input type="checkbox" name="likescats" id="likescats" checked>
+  <label for="likescats">Cats-lover</label>
+  <h2>Textarea</h2>
+  <textarea name="comments" cols="50" rows="10" placeholder="your comment here"></textarea>
 
   <hr>
 
   <h2>Form element</h2>
-  <form action="">
+  <form action="www.google.com">
     <label for="username">Username</label>
     <input type="text" placeholder="username" name="username" id="username">
     <label for="password">Enter a Password</label>
     <input type="password" placeholder="password" name="password" id="password">
+    <p>Pick a color...</p>
+    <input type="radio" id="red" name="color" value="red">
+    <label for="red">Red</label>
+    <input type="radio" id="orange" name="color" value="orange">
+    <label for="orange">Orange</label>
+    <input type="radio" id="yellow" name="color" value="yellow">
+    <label for="yellow">Yellow</label>
     <button>Submit</button>
   </form>
-</body>
 
-<h2>Reddit Search Form</h2>
-<form action="https://www.reddit.com/search/">
-  <label for="query">Search Reddit</label>
-  <input type="text" name="q" id="query" placeholder="search reddit">
-  <input type="submit" value="send">
-</form>
+  <h2>Reddit Search Form</h2>
+  <form action="https://www.reddit.com/search/">
+    <label for="query">Search Reddit</label>
+    <input type="text" name="q" id="query" placeholder="search reddit">
+    <div>
+      <label for="sort">Sort by</label>
+      <select name="sort" id="sort">
+        <option value="top">Top</option>
+        <option value="new">New</option>
+        <option value="relevance">Relevance</option>
+      </select>
+    </div>
+    <button>Search</button>
+  </form>
+
+  <h2>Validation Form</h2>
+  <form action="">
+    <input type="text" placeholder="username" required maxlength="12" minlength="3">
+    <input type="email" placeholder="email" required>
+    <button>Submit</button>
+  </form>
+
+</body>
 
 </html>
